@@ -1,0 +1,128 @@
+h1 {
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, nav a {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#bandeau_menu a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+	border: 1px solid white;
+}
+
+#liens {
+    margin: 1%;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 15%;
+    float: left;
+}
+
+#liens a {
+    color: white;
+}
+
+#bandeau_menu a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: red;
+}
+
+#bandeau_menu {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-left: 15px;
+    border-width: 2px;
+    border-color: white;
+}
+
+
+
+nav li {
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+p {
+    font-family: 'Unna', serif;
+}
+
+#entete {
+    padding: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+#page li {
+    list-style-type: "\00221E";
+    padding-left: 1em;
+}
+
+#page {
+    padding: 5px;
+    padding-left: 0px;
+    margin-left: 17%;
+    width: 82%;
+}
+
+nav ul {
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/fond.jpg);
+    background-size: 120%;
+    color: white;
+    background-attachment: fixed;
+}
+
+#page a {
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+}
+
+#page a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+h2 {
+    color: red;
+    text-decoration: underline;
+}
+
+input, select
+{
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px white;
+    outline: none;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
