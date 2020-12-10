@@ -126,3 +126,7 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 }
+
+.italique {
+    text-decoration: italic;
+}
