@@ -130,3 +130,8 @@ body {
 .italique {
     font-style: italic;
 }
+
+.code {
+    border: 1px solid black;
+    padding: 5px;
+}
