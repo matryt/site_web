@@ -7,12 +7,15 @@ footer {
 }
 
 footer a {
-    color: white;
     text-decoration: none;
+}
+
+#menu_footer a {
+    color: white;
     font-family: 'Unna', serif;
 }
 
-footer a:hover {
+#menu_footer a:hover {
     text-decoration: underline;
 }
 
