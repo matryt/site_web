@@ -42,6 +42,22 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4lXp_89c3RU" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+            <h3>Langages à typage statique / dynamique</h3>
+            <p>On peut comparer les langages selon leur type de langage.
+                <br /> Dans un programme écrit en langage à typage dynamique, la vérification de type ne se fait qu'à
+                l'exécution du programme et le type d'une variable peut changer durant l'exécution. Voici un exemple de
+                code Python qui montre ce phénomène :
+            </p>
+            <p class="code">
+                >>> if False:
+                <br/>... 1 + "two" # This line never runs, so no TypeError is raised
+                <br/>... else:
+                <br/>... 1 + 2
+                <br/>...
+                <br/>3
+                <br/>>>> 1 + "two" # Now this is type checked
+                <br/>TypeError: unsupported operand type(s) for +: 'int' and 'str'
+            </p>
         </div>
         <a id="Haut_page" class="invisible" href="#"></a>
     </div>
