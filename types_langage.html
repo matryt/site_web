@@ -43,7 +43,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <h3>Langages à typage statique / dynamique</h3>
-            <p>On peut comparer les langages selon leur type de langage.
+            <p>
+                On peut comparer les langages selon leur type de langage.
                 <br /> Dans un programme écrit en langage à typage dynamique, la vérification de type ne se fait qu'à
                 l'exécution du programme et le type d'une variable peut changer durant l'exécution. Voici un exemple de
                 code Python qui montre ce phénomène :
@@ -57,6 +58,9 @@
                 <br/>3
                 <br/>>>> 1 + "two" # Now this is type checked
                 <br/>TypeError: unsupported operand type(s) for +: 'int' and 'str'
+            </p>
+            <p>
+                Dans le premier exemple, la condition <span class='italique'>if False</span> est fausse donc le code <span class='italique'>1 + "two"</span>&thinsp; n'est jamais exécuté et ne génère donc pas d'erreur de type : en effet Python ne sait pas additionner un entier (<span class='italique'>int&thinsp;</span>) et une chaîne de caractères (<span class='italique'>string&thinsp;</span>). Cependant la ligne 6 de la console génère une exception de type <span class='italique'>TypeError</span> car ce code est lui bien exécuté. On voit bien que le code ne génère une exception que s'il est effectivement exécuté, et pas uniquement mis dans le programme.
             </p>
         </div>
         <a id="Haut_page" class="invisible" href="#"></a>
