@@ -136,3 +136,125 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+footer {
+    background-color: rgba(0, 253, 232, 0.39);
+    font-family: 'Unna', serif;
+    font-size: smaller;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#menu_footer a {
+    color: white;
+    font-family: 'Unna', serif;
+}
+
+#menu_footer a:hover {
+    text-decoration: underline;
+}
+
+.titre {
+    font-family: 'Unna', serif;
+    margin: 0px;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+#plan {
+    margin: 0;
+}
+label {
+    margin-right: 5px;
+    line-height: 32px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+    top: 4px;
+    margin-right: 20px;
+}
+
+input:checked {
+    border: 6px solid black;
+}
+
+button, legend {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+}
+
+button:hover,
+button:focus {
+    color: #999;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}
+a#Haut_page {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    right: 20px;
+    opacity: 1;
+    z-index: 99999;
+    transition: all ease-in 0.3s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+
+a#Haut_page:before {
+    content: "\25b2";
+}
+
+a#Haut_page:hover {
+    color: red;
+    transition: all ease-in 0.2s;
+}
+
+a#Haut_page.invisible {
+    bottom: -35px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+a#Haut_page.visible {
+    bottom: 20px;
+    opacity: 1;
+}
+p {
+    margin: 0px;
+}
+.legende {
+    text-decoration: underline;
+}
+
+#images {
+    margin-bottom: 0px;
+}
