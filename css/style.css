@@ -9,15 +9,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6, nav a {
     font-family: 'Julius Sans One', sans-serif;
-}
-
-#bandeau_menu a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-    padding: 5px;
-	border: 1px solid white;
-}
+}   
 
 #liens {
     margin: 1%;
@@ -28,11 +20,11 @@ h1, h2, h3, h4, h5, h6, nav a {
 }
 
 #liens a {
-    color: white;
     list-style-type: none;
+    color: black;
 }
 
-#bandeau_menu a:hover {
+#liens a:hover {
     font-weight: bolder;
     text-decoration: underline;
     color: red;
@@ -46,15 +38,6 @@ h1, h2, h3, h4, h5, h6, nav a {
     border-width: 2px;
     border-color: white;
 }
-
-
-
-nav li {
-    padding: 5px;
-    text-decoration: none;
-    text-align: center;
-}
-
 
 p {
     font-family: "Unna", serif;
@@ -74,7 +57,7 @@ p {
 #page {
     padding: 5px;
     padding-left: 0px;
-    margin-left: 17%;
+    margin-left: 14%;
     width: 82%;
 }
 
@@ -84,12 +67,25 @@ nav ul {
     padding-bottom: 15px;
     padding-left: 0px;
     padding-right: 0px;
+    list-style-type: none;
+}
+
+nav td {
+    text-align: center;
+    padding: 1.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40px;
+    width: 220px;
+}
+
+nav table {
+    margin: 1%;
 }
 
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url(../img/fond.jpg);
+    background-image: url(../img/fond_ordi.jpg);
     background-size: 120%;
     color: white;
     background-attachment: fixed;
