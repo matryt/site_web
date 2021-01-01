@@ -82,12 +82,12 @@ body {
     background-attachment: fixed;
 }
 
-#page a {
+#page a, #sources a {
     color: rgb(0, 255, 255);
     text-decoration: none;
 }
 
-#page a:hover {
+#page a:hover, #sources a:hover {
     color: red;
     text-decoration: underline;
 }
@@ -249,4 +249,12 @@ p {
 
 #titre_haut {
     margin-top: 0px;
+}
+
+sup {
+    font-size: 1.2em;
+}
+
+#sources {
+    margin: 1%;
 }
