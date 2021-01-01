@@ -63,18 +63,20 @@
                 cette version, tout code, documentation et spécification ajouté est détenu par la Python Software
                 Foundation.
             </p>
-            <h3>Caractéristiques</h3>
+            <h3>Caractéristiques et syntaxe</h3>
             <p>
                 Python a été conçu pour être très lisible. Il possède moins de constructions syntaxiques que de nombreux
-                autres langages, parmi lesquels le C. Les blocs sont identifiés par l'indentation : le début du bloc est
+                autres langages, parmi lesquels le C. Les blocs sont identifiés par l'indentation (ajout de tabulation ou d'espaces dans un fichier texte) : le début du bloc est
                 signalé par une augmentation de l'indentation et la fin par une diminution d'indentation.
             </p>
             <img src="img/indentations_python.png" alt="Structure d'un code Python"><sup> <a href="#img3" title="Voir la source de cette image">3</a> </sup>
+            <p>Sa syntaxe est assez simple. <span class="italique">Def</span> est le mot-clé annonçant la définition d'une fonction. <span class="italique">Nom</span> et <span class="italique">heure</span> sont les arguments de la fonction <span class="italique">bonjour</span>. <span class="italique">If</span> définit une condition, ici "il est moins de 17 heures". L'instruction qui se trouve ensuite est exécutée si et seulement si la condition qui se trouve après if est vérifiée. A l'inverse, <span class="italique">else</span> est suivie des instructions à exécuter si la condition (<span class="italique">heure&lt;=17</span> ) n'est pas vérifiée. <span class="italique">Print</span> est lui l'instruction permettant d'afficher dans la console du texte. </p>
             <p>
-                Python permet de programmer dans un style fonctionnel et dispose de compréhensions de listes.
-                <br /> Tous les types de base, les fonctions, les instances de classes et les classes elles-mêmes sont
+                Python permet de programmer dans un style fonctionnel et dispose de compréhension de listes, une expression permettant de construire une liste à partir de tout autre itérable (objet dont on peut parcourir les valeurs).
+                <br /> Tous les types de base, les fonctions, les instances de classes et les classes (dont la déclaration regroupe des membres, méthodes et attributs communs à cette classe) elles-mêmes sont
                 des
-                objets. Les classes supportent l'héritage multiple.
+                objets. Les classes supportent l'héritage multiple (mécanisme par lequel une classe peut hériter de multiples super-classes).
+
             </p>
             <h3>Modèle objet</h3>
             <p>
@@ -93,10 +95,20 @@
             <h3>Conventions de style</h3>
             <p>
                 Guido Van Rossum a mis à disposition un guide appelé PEP 8. Il est toujours maintenu pour l'adapter aux
-                évolutions du langage. Il existe aussi un texte appelé "Zen of Python" :
+                évolutions du langage.
             </p>
+            <h2>Java</h2>
+            <img src="img/logo_java.png" alt="Logo Java" width="100px"><sup> <a href="#img4" title="Voir la source de cette image">4</a> </sup>
+            <p>Java est un langages orienté objet. Une de ses particularités est que les logiciels écrits dans ce langage sont compilées vers une représentation binaire qui peut être exécutée dans une machine virtuelle Java sans tenir compte du système d'exploitation sur lequel est exécuté le code.</p>
+            <h3>Historique</h3>
+            <p>Le langage Java est issu d'un projet de Sun datant de 1990. L'équipe pensait d'abord utiliser pour le Projet Stealth le langage C++, et ils développerent alors un nouveau langage surnommé Oak. Il est présenté lors d'une démonstration incluant le langage Oak a l'été 1992. De juin à juillet 1994, toute l'équipe essaya de recentrer leur plateforme sur le web. Cette même année le langage est renommé Java. Il est lancé en 1994. 
+            </p>
+            <h3>Syntaxe</h3>
+            <img src="img/bj_java.png" alt="Bonjour en Java" ><sup> <a href="#img5" title="Voir la source de cette image">5</a> </sup>
+            <p>Les blocs de code sont encadrés par des accolades, chaque instruction doit se terminer par un point-virgule. De plus, une instruction peut tenir sur plusieurs lignes ; la tabulation est ignorée du compilateur mais permet une bonne compréhension du code par le programmeur qui doit relire le code.
+            <br/> <span class="italique">Public class </span> permet de définir une classe qui peut être utilisée par tout utilisateur important la paquetage. <span class="italique">HelloWorld</span> est le nom de la classe publique. <span class="italique">Static</span> devant une variable ou méthode indique qu'elle n'appartient pas à une instance particulière de la classe. <span class="italique">Void</span> indique qu'une méthode ne retourne aucune valeur donc que c'est une procédure. La méthode <span class="italique">main</span> constitue la partie principale du programme, permettant l'exécution d'une application Java. </p> 
             <h2>C</h2>
-            <img src="img/logo_c.png" alt="Logo C" width=100>
+            <img src="img/logo_c.png" alt="Logo C" width="100px"><sup> <a href="#img6" title="Voir la source de cette image">6</a> </sup>
             <p>C est un langage généraliste de bas niveau. Il est très utilisé de nos jours. De nombreux langages plus
                 modernes tels que C++, C#, Java, PHP, etc. ont repris sa syntaxe et en partie sa logique. C offre au
                 développeur un contrôle important sur la machine et est donc très utilisé pour réaliser les compilateurs
@@ -117,7 +129,7 @@
             <h3>Syntaxe</h3>
             <p>
                 On peut écrire un programme disant bonjour :</p>
-            <img src="img/bjconventions_c.png" alt="Programme C disant bonjour et respectant les conventions">
+            <img src="img/bjconventions_c.png" alt="Programme C disant bonjour"><sup> <a href="#img7" title="Voir la source de cette image">7</a> </sup>
             <p><span class="italique">Main</span> est le nom de la fonction principale du programme, sans laquelle il ne peut s'exécuter. Les
                 parenthèses indiquent qu'il s'agit d'une fonction. Les accolades entourant les instructions constituent
                 le corps de la fonction, et sont obligatoires dès qu'il y a plus d'une instruction. <span class="italique">Printf</span> est une
@@ -130,6 +142,10 @@
             <p id="img1">1. Logo de Python. De Python, par PSF, 2020, python.org. Licence Python Software compatible GPL.</p>
             <p id="img2">2. Van Rossum at the 2008 Google I/O Developer's Conference. De Wikimédia Commons, par José Gnudista, 2009, commons.wikimedia.org. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
             <p id="img3">3. Code Python mettant en valeur les indentations. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
+            <p id="img4">4. Logo de Java. De Wikimédia Commons, par 16@r, 2006, commons.wikimedia.org. Le logo Java est une marque déposée de Oracle Corp.</p>
+            <p id="img5">5. Hello world écrit en Java. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
+            <p id="img6">6. Logo de C. De Wikimédia Commons, par Rezonansowy, 2019, commons.wikimedia.org. Domaine public. </p>
+            <p id="img7">7. Hello world écrit en C. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
         </div>
         <a id="Haut_page" class="invisible" href="#"></a>
 
