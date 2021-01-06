@@ -1,207 +1,498 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+	<head>
+		<title>L'informatique - La programmation</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Unna&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <title>L'informatique - La programmation</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div id="entete">
-        <h1>La programmation</h1>
-    </div>
-    <div>
-        <div id="liens">
-            <nav>
-                <table>
-                    <tr>
-                        <td>
-                        <a href="index.html">Accueil</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="programmation.html">Programmation</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="robotique.html">Robotique</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="intelligence_artificielle.html">Intelligence artificielle</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <a href="contact.html">Contact</a>
-                        </td>
-                    </tr>
-                </table>
-            </nav>
-        </div>
-        <div id="page">
-            <h2 id="titre_haut">Python</h2>
-            <div id="logo_inventeur">
-                <p id="images">
-                    <img src="img/logo_python.png" alt="Logo Python" width="400px"><sup><a href="#img1" title="Voir la source de cette image">1</a> </sup>
-                    <img src="img/guido_van_rossum.jpg" alt="Guido Van Rossum" width="180px"><sup> <a href="#img2" title="Voir la source de cette image">2</a> </sup>
-                </p>
-            </div>
-            <p>
-                Python est un langage de programmation interprété. Il est placé sous licence libre et
-                fonctionne sur la plupart des plateformes informatiques.
-            </p>
-            <h3>Historique</h3>
-            <p>
-                A la fin des années 1980, Guido Van Rossum participe au développement d'un langage de programmation,
-                ABC, au
-                Centrum voor Wiskunde en Informatica d'Amsterdam. En 1989, il profite d'une semaine de vacances pour
-                écrire
-                la première version du langage. Il s'est principalement inspiré d'ABC. En février 1991 est publiée la
-                première version publique (0.9.0) sur le forum Usenet. Python est disponible au grand public.
-                <br /> En 1995, Van Rossum continue son travail sur Python au CNRI aux États-Unis, où il sort plusieurs
-                versions du logiciel. Python 2.1 fut une version dérivée de Python 1.6.1 et Python 2.0. Depuis la sortie
-                de
-                cette version, tout code, documentation et spécification ajouté est détenu par la Python Software
-                Foundation.
-            </p>
-            <h3>Caractéristiques et syntaxe</h3>
-            <p>
-                Python a été conçu pour être très lisible. Il possède moins de constructions syntaxiques que de nombreux
-                autres langages, parmi lesquels le C. Les blocs sont identifiés par l'indentation (ajout de tabulation ou d'espaces dans un fichier texte) : le début du bloc est
-                signalé par une augmentation de l'indentation et la fin par une diminution d'indentation.
-            </p>
-            <img src="img/indentations_python.png" alt="Structure d'un code Python"><sup> <a href="#img3" title="Voir la source de cette image">3</a> </sup>
-            <p>Sa syntaxe est assez simple. <span class="italique">Def</span> est le mot-clé annonçant la définition d'une fonction. <span class="italique">Nom</span> et <span class="italique">heure</span> sont les arguments de la fonction <span class="italique">bonjour</span>. <span class="italique">If</span> définit une condition, ici "il est moins de 17 heures". L'instruction qui se trouve ensuite est exécutée si et seulement si la condition qui se trouve après if est vérifiée. A l'inverse, <span class="italique">else</span> est suivie des instructions à exécuter si la condition (<span class="italique">heure&lt;=17</span> ) n'est pas vérifiée. <span class="italique">Print</span> est lui l'instruction permettant d'afficher dans la console du texte. </p>
-            <p>
-                Python permet de programmer dans un style fonctionnel et dispose de compréhension de listes, une expression permettant de construire une liste à partir de tout autre itérable (objet dont on peut parcourir les valeurs).
-                <br /> Tous les types de base, les fonctions, les instances de classes et les classes (dont la déclaration regroupe des membres, méthodes et attributs communs à cette classe) elles-mêmes sont
-                des
-                objets. Les classes supportent l'héritage multiple (mécanisme par lequel une classe peut hériter de multiples super-classes).
-
-            </p>
-            <h3>Modèle objet</h3>
-            <p>
-                Les développeurs Python estiment qu'il suffit d'indiquer, par des conventions d'écriture, les parties
-                publiques des interfaces et que c'est aux utilisateurs des objets de se conformer à ces conventions ou
-                de prendre leurs responsabilités ; leur slogan par rapport à cela est "We're all consenting adults here"
-                qui se traduit par "Nous sommes entre adultes consentants".
-            </p>
-            <h3>Bibliothèque standard</h3>
-            <p>
-                Python possède une grande bibliothèque standard. Le nombre de modules de la bibliothèque standard peut
-                être augmenté avec des modules. La bibliothèque standard est bien conçue pour écrire des applications
-                utilisant Internet. Des modules pour créer des interfaces graphiques et manipuler des expressions
-                rationnelles sont également fournis.
-            </p>
-            <h3>Conventions de style</h3>
-            <p>
-                Guido Van Rossum a mis à disposition un guide appelé PEP 8. Il est toujours maintenu pour l'adapter aux
-                évolutions du langage.
-            </p>
-            <h2>Java</h2>
-            <img src="img/logo_java.png" alt="Logo Java" width="100px"><sup> <a href="#img4" title="Voir la source de cette image">4</a> </sup>
-            <p>Java est un langages orienté objet. Une de ses particularités est que les logiciels écrits dans ce langage sont compilées vers une représentation binaire qui peut être exécutée dans une machine virtuelle Java sans tenir compte du système d'exploitation sur lequel est exécuté le code.</p>
-            <h3>Historique</h3>
-            <p>Le langage Java est issu d'un projet de Sun datant de 1990. L'équipe pensait d'abord utiliser pour le Projet Stealth le langage C++, et ils développerent alors un nouveau langage surnommé Oak. Il est présenté lors d'une démonstration incluant le langage Oak a l'été 1992. De juin à juillet 1994, toute l'équipe essaya de recentrer leur plateforme sur le web. Cette même année le langage est renommé Java. Il est lancé en 1994. 
-            </p>
-            <h3>Syntaxe</h3>
-            <img src="img/bj_java.png" alt="Bonjour en Java" ><sup> <a href="#img5" title="Voir la source de cette image">5</a> </sup>
-            <p>Les blocs de code sont encadrés par des accolades, chaque instruction doit se terminer par un point-virgule. De plus, une instruction peut tenir sur plusieurs lignes ; la tabulation est ignorée du compilateur mais permet une bonne compréhension du code par le programmeur qui doit relire le code.
-            <br/> <span class="italique">Public class </span> permet de définir une classe qui peut être utilisée par tout utilisateur important la paquetage. <span class="italique">HelloWorld</span> est le nom de la classe publique. <span class="italique">Static</span> devant une variable ou méthode indique qu'elle n'appartient pas à une instance particulière de la classe. <span class="italique">Void</span> indique qu'une méthode ne retourne aucune valeur donc que c'est une procédure. La méthode <span class="italique">main</span> constitue la partie principale du programme, permettant l'exécution d'une application Java. </p> 
-            <h2>C</h2>
-            <img src="img/logo_c.png" alt="Logo C" width="100px"><sup> <a href="#img6" title="Voir la source de cette image">6</a> </sup>
-            <p>C est un langage généraliste de bas niveau. Il est très utilisé de nos jours. De nombreux langages plus
-                modernes tels que C++, C#, Java, PHP, etc. ont repris sa syntaxe et en partie sa logique. C offre au
-                développeur un contrôle important sur la machine et est donc très utilisé pour réaliser les compilateurs
-                et interpréteurs d'autres langages.</p>
-            <h3>Histoire</h3>
-            <p>Le C a été inventé en 1972 par Dennis Ritchie et Ken Thompson dans les laboratoires Bell. Par la suite,
-                Brian Kernighan aida à populariser le langage, mais fit également des modifications au dernier moment. En
-                1978, il écrit un livre décrivant le nouveau langage. </p>
-            <h3>Caractéristiques</h3>
-            <p>C est un langage généraliste et de bas niveau. Il propose un très grand nombre de types entiers et
-                flottants qui s'adaptent aux données traitées par le processeur et utilise intensivement les calculs
-                d'adresse mémoire. Le langage ne propose pas à la base de programmation orientée objet, ni de gestion
-                d'exceptions comme on peut en trouver dans d'autres langages (exemple en Python : <span class="italique">try </span>/<span class="italique">except</span>). Ces
-                caractéristiques en font un langage très utilisé pour les microprocesseurs, les calculs difficiles, le
-                codage de systèmes d'exploitation et les programmes dans laquelle la vitesse est fondamentale. En
-                contrepartie, l'écriture de programmes en C est plus difficile et longue qu'avec des langages de haut
-                niveau. Le compilateur fait égalemet très peu de vérifications concernant les erreurs du programme.</p>
-            <h3>Syntaxe</h3>
-            <p>
-                On peut écrire un programme disant bonjour :</p>
-            <img src="img/bjconventions_c.png" alt="Programme C disant bonjour"><sup> <a href="#img7" title="Voir la source de cette image">7</a> </sup>
-            <p><span class="italique">Main</span> est le nom de la fonction principale du programme, sans laquelle il ne peut s'exécuter. Les
-                parenthèses indiquent qu'il s'agit d'une fonction. Les accolades entourant les instructions constituent
-                le corps de la fonction, et sont obligatoires dès qu'il y a plus d'une instruction. <span class="italique">Printf</span> est une
-                fonction d'écriture native. Les points-virgules sont obligatoires et marquent la fin d'une instruction. <span class="italique">#include &lt;stdio.h&gt;</span> permet d'inclure l'entête <span class="italique">stdio.h</span> qui contient les fonctions natives d'entrée-sortie, telles que <span class="italique">printf</span>. <span class="italique">Int</span> est le type renvoyé par <span class="italique">main</span>. <span class="italique">Void</span> entre les deux parenthèses veut dire que la fonction n'admet aucun paramètre. Enfin, l'instruction <span class="italique">return 0</span> fait retourner la valeur 0 à la fonction <span class="italique">main</span>. </p>
-            <h3>Bibliothèque standard</h3>
-            <p>La bibliothèque est très simple du fait du caractère bas-niveau du C. Elle n'offre aucun support d'interface graphique, de réseau, de gestion avancée d'erreurs internes au programme. </p>
-        </div>
-        <div id="sources">
-            <h2>Sources des images</h2>
-            <p id="img1">1. Logo de Python. De Python, par PSF, 2020, python.org. Licence Python Software compatible GPL.</p>
-            <p id="img2">2. Van Rossum at the 2008 Google I/O Developer's Conference. De Wikimédia Commons, par José Gnudista, 2009, commons.wikimedia.org. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
-            <p id="img3">3. Code Python mettant en valeur les indentations. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
-            <p id="img4">4. Logo de Java. De Wikimédia Commons, par 16@r, 2006, commons.wikimedia.org. Le logo Java est une marque déposée de Oracle Corp.</p>
-            <p id="img5">5. Hello world écrit en Java. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
-            <p id="img6">6. Logo de C. De Wikimédia Commons, par Rezonansowy, 2019, commons.wikimedia.org. Domaine public. </p>
-            <p id="img7">7. Hello world écrit en C. De Site sur l’informatique, par Mathieu CUVELIER, 2020. Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" title="Voir les termes de la licence" target='_blank'>CC-BY-SA</a>.</p>
-        </div>
-        <a id="Haut_page" class="invisible" href="#"></a>
-
-    </div>
-    <footer>
-        &copy; Copyright <span id="annee"></span> Mathieu CUVELIER
-        <div id="menu_footer">
-            <nav>
-                <p id="plan">
-                    <span class="titre">
-                        Navigation :
-                    </span>
-                    <a href="index.html">
-                        Accueil
-                    </a> -
-                    <a href="programmation.html">
-                        Programmation
-                    </a> -
-                    <a href="robotique.html">
-                        Robotique
-                    </a> -
-                    <a href="intelligence_artificielle.html">
-                        Intelligence artificielle
-                    </a> -
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </p>
-            </nav>
-        </div>
-        <p class="titre">Suivez-nous :</p>
-        <div>
-            <a href="https://twitter.com/MathieuCUVELIE4" target="_blank">
-                <img title="Twitter" alt="Twitter" src="img/twitter.png" width="35" height="35" />
-            </a>
-            <a href="http://www.pinterest.com/patricemathieucuvelier
-                " target="_blank">
-                <img title="Pinterest" alt="Pinterest" src="img/pinterest.png" width="35" height="35" />
-            </a>
-            <a href="http://www.linkedin.com/in/mathieucuvelier" target="_blank">
-                <img title="Linkedin" alt="Linkedin" src="img/linkedin.png" width="35" height="35" />
-            </a>
-            <p><small>Les logos de Twitter, de Pinterest et de Linkedin sont respectivement des marques déposées de Twitter International Company, Pinterest Europe Ltd. et Linkedin Ireland Unlimited Company.</small></p>
-        </div>
-    </footer>
-    <script src="script/script.js"></script>
-</body>
-
+	<body>
+		<div id="entete">
+			<h1>La programmation</h1>
+		</div>
+		<div>
+			<div id="liens">
+				<nav>
+					<table>
+						<tr>
+							<td>
+								<a href="index.html">Accueil</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="programmation.html">Programmation</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="robotique.html">Robotique</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="intelligence_artificielle.html"
+									>Intelligence artificielle</a
+								>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="contact.html">Contact</a>
+							</td>
+						</tr>
+					</table>
+				</nav>
+			</div>
+			<div id="page">
+				<h2 id="titre_haut">Types de langages</h2>
+				<h3>Langages interprétés / compilés</h3>
+				<p>
+					Il existe un premier critère pour différencier les langages,
+					à savoir leur façon de traduire les instructions du
+					programme en langage machine.
+				</p>
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/4lXp_89c3RU"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+				<h3>Langages à typage statique / dynamique</h3>
+				<p>
+					On peut comparer les langages selon leur type.
+					<br />
+					Dans un programme écrit en langage à typage dynamique, la
+					vérification de type ne se fait qu'à l'exécution du
+					programme et le type d'une variable peut changer durant
+					l'exécution. Voici un exemple de code Python qui montre ce
+					phénomène :
+				</p>
+				<p class="code">
+					>>> if False:
+					<br />... 1 + "two" # This line never runs, so no TypeError
+					is raised <br />... else: <br />... 1 + 2 <br />... <br />3
+					<br />>>> 1 + "two" # Now this is type checked
+					<br />TypeError: unsupported operand type(s) for +: 'int'
+					and 'str'
+				</p>
+				<p>
+					Dans le premier exemple, la condition
+					<span class="italique">if False</span> est fausse donc le
+					code <span class="italique">1 + "two"</span>&thinsp; n'est
+					jamais exécuté et ne génère donc pas d'erreur de type : en
+					effet Python ne sait pas additionner un entier (<span
+						class="italique"
+						>int&thinsp;</span
+					>) et une chaîne de caractères (<span class="italique"
+						>string&thinsp;</span
+					>). Cependant la ligne 6 de la console génère une exception
+					de type <span class="italique">TypeError</span> car ce code
+					est lui bien exécuté. On voit bien que le code ne génère une
+					exception que s'il est effectivement exécuté, et pas
+					uniquement mis dans le programme.
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/QtDBBtDrhFs?start=247"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<br />La vidéo parle du typage dynamique entre 4min06 et
+					5min25.
+				</p>
+				<h3>Langages de haut/bas niveau</h3>
+				<p>
+					On peut enfin comparer les langages selon leur niveau, qui
+					sépare le langage et l'ordinateur. Un langage de haut niveau
+					est indépendant de la machine : il n'est lié à aucun
+					ordinateur ni puce et est donc portable. Il est aussi
+					lisible par les humains et facile à écrire ; en outre, la
+					recherche et la correction d'erreurs est plus aisée. En
+					revanche, étant éloigné du langage machine, il nécessite un
+					compilateur ou un interpréteur ce qui le rend plus gourmand
+					en mémoire. Au contraire, les langages de bas niveau sont
+					plus proches du langage machine, en binaire. Ils sont très
+					difficiles à lire et à écrire pour les humains, permettent
+					d'interagir directement avec les composants machine,
+					nécessitent moins de mémoire et sont beaucoup plus rapides.
+				</p>
+				<h2>Python</h2>
+				<div id="logo_inventeur">
+					<img
+						src="img/logo_python.png"
+						alt="Logo Python"
+						width="400px"
+					/>
+					<sup>
+						<a href="#img1" title="Voir la source de cette image"
+							>1</a
+						>
+					</sup>
+					<img
+						src="img/guido_van_rossum.jpg"
+						alt="Guido Van Rossum"
+						width="180px"
+					/>
+					<sup>
+						<a href="#img2" title="Voir la source de cette image"
+							>2
+						</a>
+					</sup>
+				</div>
+				<p>
+					Python est un langage de programmation interprété. Il est
+					placé sous licence libre et fonctionne sur la plupart des
+					plateformes informatiques.
+				</p>
+				<h3>Historique</h3>
+				<p>
+					A la fin des années 1980, Guido Van Rossum participe au
+					développement d'un langage de programmation, ABC, au Centrum
+					voor Wiskunde en Informatica d'Amsterdam. En 1989, il
+					profite d'une semaine de vacances pour écrire la première
+					version de Python, pour lequel il s'est principalement
+					inspiré d'ABC. En février 1991 est publiée la première
+					version publique (0.9.0) sur le forum Usenet : Python est
+					disponible au grand public.
+					<br />
+					En 1995, Van Rossum continue son travail sur Python au CNRI
+					aux États-Unis, où il sort plusieurs versions du logiciel.
+					Depuis la sortie de la version 2.1, tout code, documentation
+					et spécification ajouté est détenu par la Python Software
+					Foundation.
+				</p>
+				<h3>Caractéristiques et syntaxe</h3>
+				<p>
+					Python a été conçu pour être très lisible. Il possède moins
+					de constructions syntaxiques que de nombreux autres
+					langages, parmi lesquels le C. Les blocs sont identifiés par
+					l'indentation (ajout de tabulation ou d'espaces dans un
+					fichier texte) : le début du bloc est signalé par une
+					augmentation de l'indentation et la fin par une diminution
+					d'indentation.
+				</p>
+				<img
+					src="img/indentations_python.png"
+					alt="Structure d'un code Python"
+				/>
+				<sup>
+					<a href="#img3" title="Voir la source de cette image">3</a>
+				</sup>
+				<p>
+					Sa syntaxe est assez simple.
+					<span class="italique">Def</span> est le mot-clé permettant
+					la définition d'une fonction.
+					<span class="italique">Nom</span> et
+					<span class="italique">heure</span> sont les arguments de la
+					fonction <span class="italique">bonjour</span>.
+					<span class="italique">If</span> définit une condition, ici
+					"il est moins de 17 heures". L'instruction qui se trouve
+					ensuite est exécutée si et seulement si la condition qui se
+					trouve après <span class="italique">if</span>&nbsp; est
+					vérifiée. A l'inverse,
+					<span class="italique">else</span> est suivie des
+					instructions à exécuter si la condition (<span
+						class="italique"
+						>heure&lt;=17</span
+					>
+					) n'est pas vérifiée.
+					<span class="italique">Print</span> est elle l'instruction
+					permettant d'afficher dans la console du texte.
+				</p>
+				<p>
+					Python permet de programmer dans un style fonctionnel et
+					dispose de compréhension de listes, une expression
+					permettant de construire une liste à partir de tout autre
+					itérable (objet dont on peut parcourir les valeurs).
+					<br />
+					Tous les types de base, les fonctions, les instances de
+					classes et les classes (dont la déclaration regroupe des
+					membres, méthodes et attributs communs à cette classe) sont
+					des objets. Les classes supportent l'héritage multiple
+					(mécanisme par lequel une classe peut hériter de multiples
+					super-classes).
+				</p>
+				<h3>Modèle objet</h3>
+				<p>
+					Les développeurs Python estiment qu'il suffit de distinguer,
+					par des conventions d'écriture, les parties publiques et
+					privées des interfaces et que ce sont les utilisateurs du
+					langage qui devront se conformer à ces conventions ou, dans
+					le cas contraire, de prendre leurs responsabilités ; leur
+					slogan par rapport à cela est "We're all consenting adults
+					here" qui se traduit par "Nous sommes entre adultes
+					consentants".
+				</p>
+				<h3>Bibliothèque standard</h3>
+				<p>
+					Python possède une grande bibliothèque standard. Le nombre
+					de modules de la bibliothèque standard peut être augmenté
+					avec des modules. La bibliothèque standard est bien conçue
+					pour écrire des applications utilisant Internet. Des modules
+					pour créer des interfaces graphiques et manipuler des
+					expressions rationnelles sont également fournis.
+				</p>
+				<h2>Java</h2>
+				<img src="img/logo_java.png" alt="Logo Java" width="100px" />
+				<sup>
+					<a href="#img4" title="Voir la source de cette image">4</a>
+				</sup>
+				<p>
+					Java est un langage orienté objet. Une de ses particularités
+					est que les logiciels écrits dans ce langage sont compilés
+					vers une représentation binaire qui peut être exécutée dans
+					une machine virtuelle Java sans tenir compte du système
+					d'exploitation sur lequel est exécuté le code.
+				</p>
+				<h3>Historique</h3>
+				<p>
+					Le langage Java est issu d'un projet de Sun datant de 1990.
+					L'équipe pensait d'abord utiliser pour le Projet Stealth le
+					langage C++, mais il ne correspondait pas totalement à leurs
+					besoins, et ainsi ils développèrent un nouveau langage
+					surnommé Oak. Il est présenté lors d'une démonstration à
+					l'été 1992. Lors de l'année 1994, le langage est renommé
+					Java et il est lancé la même année.
+				</p>
+				<h3>Syntaxe</h3>
+				<img src="img/bj_java.png" alt="Bonjour en Java" /><sup>
+					<a href="#img5" title="Voir la source de cette image">5</a>
+				</sup>
+				<p>
+					Les blocs de code sont encadrés par des accolades, chaque
+					instruction doit se terminer par un point-virgule et peut
+					tenir sur plusieurs lignes. La tabulation, bien qu'ignorée
+					du compilateur, est conseillée car elle permet une bonne
+					compréhension du code par le programmeur qui doit relire le
+					code. <br />
+					<span class="italique">Public class </span> permet de
+					définir une classe utilisable par tout utilisateur important
+					le paquetage. <span class="italique">HelloWorld</span> est
+					le nom de la classe publique.
+					<span class="italique">Static</span> devant une variable ou
+					méthode indique qu'elle n'appartient pas à une instance
+					particulière de la classe.
+					<span class="italique">Void</span> indique qu'une méthode ne
+					retourne aucune valeur, qui est appelée une procédure. La
+					méthode <span class="italique">main</span> constitue la
+					partie principale du programme, qui est obligatoire à
+					l'exécution d'une application Java.
+				</p>
+				<h2>C</h2>
+				<img src="img/logo_c.png" alt="Logo C" width="100px" /><sup>
+					<a href="#img6" title="Voir la source de cette image">6</a>
+				</sup>
+				<p>
+					C est un langage généraliste de bas niveau. Il est très
+					utilisé de nos jours. De nombreux langages plus modernes
+					tels que C++, C#, Java, PHP, etc. ont repris sa syntaxe et
+					en partie sa logique. C offre au développeur un contrôle
+					important sur la machine et est donc très utilisé pour
+					réaliser les compilateurs et interpréteurs d'autres
+					langages.
+				</p>
+				<h3>Histoire</h3>
+				<p>
+					Le C a été inventé en 1972 par Dennis Ritchie et Ken
+					Thompson dans les laboratoires Bell. Par la suite, Brian
+					Kernighan aida à populariser le langage, mais fit également
+					des modifications au dernier moment. En 1978, il écrit un
+					livre décrivant le nouveau langage.
+				</p>
+				<h3>Caractéristiques</h3>
+				<p>
+					C est un langage généraliste et de bas niveau. Il propose un
+					très grand nombre de types entiers et flottants qui
+					s'adaptent aux données traitées par le processeur et utilise
+					intensivement les calculs d'adresse mémoire. Le langage ne
+					propose pas à la base de programmation orientée objet, ni de
+					gestion d'exceptions comme on peut en trouver dans d'autres
+					langages (exemple en Python :
+					<span class="italique">try </span>/<span class="italique"
+						>except</span
+					>). Ces caractéristiques en font un langage très utilisé
+					pour les microprocesseurs, les calculs difficiles, le codage
+					de systèmes d'exploitation et les programmes dans laquelle
+					la vitesse est fondamentale. En contrepartie, l'écriture de
+					programmes en C est plus difficile et longue qu'avec des
+					langages de haut niveau. Le compilateur fait également très
+					peu de vérifications concernant les erreurs du programme.
+				</p>
+				<h3>Syntaxe</h3>
+				<p>On peut écrire un programme disant bonjour :</p>
+				<img
+					src="img/bjconventions_c.png"
+					alt="Programme C disant bonjour"
+				/><sup>
+					<a href="#img7" title="Voir la source de cette image">7</a>
+				</sup>
+				<p>
+					<span class="italique">Main</span> est le nom de la fonction
+					principale du programme, sans laquelle il ne peut
+					s'exécuter. Les parenthèses indiquent qu'il s'agit d'une
+					fonction. Les accolades entourant les instructions
+					constituent le corps de la fonction, et sont obligatoires
+					dès qu'il y a plus d'une instruction.
+					<span class="italique">Printf</span> est une fonction
+					d'écriture native. Les points-virgules sont obligatoires et
+					marquent la fin d'une instruction.
+					<span class="italique">#include &lt;stdio.h&gt;</span>
+					permet d'inclure l'entête
+					<span class="italique">stdio.h</span> qui contient les
+					fonctions natives d'entrée-sortie, telles que
+					<span class="italique">printf</span>.
+					<span class="italique">Int</span> est le type renvoyé par
+					<span class="italique">main</span>.
+					<span class="italique">Void</span> entre les deux
+					parenthèses veut dire que la fonction n'admet aucun
+					paramètre. Enfin, l'instruction
+					<span class="italique">return 0</span> fait retourner la
+					valeur 0 à la fonction <span class="italique">main</span>.
+				</p>
+				<h3>Bibliothèque standard</h3>
+				<p>
+					La bibliothèque est très simple du fait du caractère
+					bas-niveau du C. Elle n'offre aucun support d'interface
+					graphique, de réseau, de gestion avancée d'erreurs internes
+					au programme.
+				</p>
+			</div>
+			<div id="sources">
+				<h2>Sources des images</h2>
+				<p id="img1">
+					1. Logo de Python. De Python, par PSF, 2020, python.org.
+					Licence Python Software compatible GPL.
+				</p>
+				<p id="img2">
+					2. Van Rossum at the 2008 Google I/O Developer's Conference.
+					De Wikimédia Commons, par José Gnudista, 2009,
+					commons.wikimedia.org. Licence
+					<a
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+						title="Voir les termes de la licence"
+						target="_blank"
+						>CC-BY-SA</a
+					>.
+				</p>
+				<p id="img3">
+					3. Code Python mettant en valeur les indentations. De Site
+					sur l’informatique, par Mathieu CUVELIER, 2020. Licence
+					<a
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+						title="Voir les termes de la licence"
+						target="_blank"
+						>CC-BY-SA</a
+					>.
+				</p>
+				<p id="img4">
+					4. Logo de Java. De Wikimédia Commons, par 16@r, 2006,
+					commons.wikimedia.org. Le logo Java est une marque déposée
+					d'Oracle Corp.
+				</p>
+				<p id="img5">
+					5. Hello world écrit en Java. De Site sur l’informatique,
+					par Mathieu CUVELIER, 2020. Licence
+					<a
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+						title="Voir les termes de la licence"
+						target="_blank"
+						>CC-BY-SA</a
+					>.
+				</p>
+				<p id="img6">
+					6. Logo de C. De Wikimédia Commons, par Rezonansowy, 2019,
+					commons.wikimedia.org. Domaine public.
+				</p>
+				<p id="img7">
+					7. Hello world écrit en C. De Site sur l’informatique, par
+					Mathieu CUVELIER, 2020. Licence
+					<a
+						href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+						title="Voir les termes de la licence"
+						target="_blank"
+						>CC-BY-SA</a
+					>.
+				</p>
+			</div>
+			<a id="Haut_page" class="invisible" href="#"></a>
+		</div>
+		<footer>
+			&copy; Copyright <span id="annee"></span> Mathieu CUVELIER
+			<div id="menu_footer">
+				<nav>
+					<p id="plan">
+						<span class="titre"> Navigation : </span>
+						<a href="index.html"> Accueil </a> -
+						<a href="programmation.html"> Programmation </a> -
+						<a href="robotique.html"> Robotique </a> -
+						<a href="intelligence_artificielle.html">
+							Intelligence artificielle
+						</a>
+						-
+						<a href="contact.html"> Contact </a>
+					</p>
+				</nav>
+			</div>
+			<p class="titre">Suivez-nous :</p>
+			<div>
+				<a href="https://twitter.com/MathieuCUVELIE4" target="_blank">
+					<img
+						title="Twitter"
+						alt="Twitter"
+						src="img/twitter.png"
+						width="35"
+						height="35"
+					/>
+				</a>
+				<a
+					href="http://www.pinterest.com/patricemathieucuvelier
+                "
+					target="_blank"
+				>
+					<img
+						title="Pinterest"
+						alt="Pinterest"
+						src="img/pinterest.png"
+						width="35"
+						height="35"
+					/>
+				</a>
+				<a
+					href="http://www.linkedin.com/in/mathieucuvelier"
+					target="_blank"
+				>
+					<img
+						title="Linkedin"
+						alt="Linkedin"
+						src="img/linkedin.png"
+						width="35"
+						height="35"
+					/>
+				</a>
+				<p>
+					<small
+						>Les logos de Twitter, de Pinterest et de Linkedin sont
+						respectivement des marques déposées de Twitter
+						International Company, Pinterest Europe Ltd. et Linkedin
+						Ireland Unlimited Company.</small
+					>
+				</p>
+			</div>
+		</footer>
+		<script src="script/script.js"></script>
+	</body>
 </html>
