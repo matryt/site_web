@@ -82,12 +82,22 @@ body {
     background-attachment: fixed;
 }
 
-#page a, #sources a {
+/*#page a, #sources a {
     color: rgb(0, 255, 255);
     text-decoration: none;
 }
 
 #page a:hover, #sources a:hover {
+    color: red;
+    text-decoration: underline;
+}*/
+
+a {
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
     color: red;
     text-decoration: underline;
 }
@@ -257,4 +267,14 @@ sup {
 
 #sources {
     margin: 1%;
+}
+
+.definition a {
+    color: rgb(17, 225, 3);
+    font-weight: bold;
+}
+
+.definition {
+    color: rgb(17, 225, 3);
+    font-weight: bold;
 }
