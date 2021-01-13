@@ -59,11 +59,12 @@ function explication(numero) {
 			alert(
 				"L'adresse mémoire est un nombre entier naturel qui désigne une zone particulière de la mémoire."
 			);
-            return False;
-        case 9:
-            alert("Un processeur est un composant d'un ordinateur qui exécute les instructions et traite les données des programmes"
-            );
-            return False;
+			return False;
+		case 9:
+			alert(
+				"Un processeur est un composant d'un ordinateur qui exécute les instructions et traite les données des programmes"
+			);
+			return False;
 		default:
 			alert("Un argument incorrect a été fourni à la fonction.");
 			return False;
